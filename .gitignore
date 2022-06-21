@@ -1,0 +1,7 @@
+terraform.tfvars
+terraform.tfstate
+.terraform/
+.terraform.*
+node_modules/
+output.json
+terraform/terraform.tfstate.backup
