@@ -9,21 +9,12 @@ resource "ibm_database" "mongodb" {
 
   group {
     group_id = "member"
-
-    members {
-      allocation_count = 3
-    }
-
-    memory {
-      allocation_mb = 14336
+      host_flavor {
+      id = "b3c.4x16.encrypted"
     }
 
     disk {
       allocation_mb = 20480
-    }
-
-    cpu {
-      allocation_count = 6
     }
   }
 
