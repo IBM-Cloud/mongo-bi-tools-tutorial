@@ -4,8 +4,8 @@ resource "ibm_database" "mongodb" {
   service           = "databases-for-mongodb"
   plan              = "enterprise"
   location          = var.region
-  version           = "4.4"
   adminpassword = var.admin_password
+  service_endpoints = "public"
 
   group {
     group_id = "member"
